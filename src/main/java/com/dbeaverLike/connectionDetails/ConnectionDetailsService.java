@@ -1,6 +1,6 @@
 package com.dbeaverLike.connectionDetails;
 
-import com.dbeaverLike.dbstructure.config.ReqSpecDataAccessPool;
+import com.dbeaverLike.dbBrowser.config.ReqSpecDataAccessPool;
 import com.dbeaverLike.exception.ConnectionDetailsNotFoundException;
 import java.util.List;
 import org.springframework.stereotype.Service;

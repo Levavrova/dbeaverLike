@@ -1,6 +1,6 @@
 package com.dbeaverLike.exception;
 
-import com.dbeaverLike.dbstructure.config.ReqSpecDataAccessUser;
+import com.dbeaverLike.dbBrowser.config.ReqSpecDataAccessUser;
 import java.sql.SQLException;
 import javax.inject.Inject;
 import javax.inject.Provider;
