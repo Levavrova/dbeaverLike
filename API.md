@@ -4,25 +4,25 @@
 
 
 
-#### * REQUEST Method and URL:
-> #### GET /connection-details/{id}
+#### * REQUEST Method and URL:<br/>
+`GET /connection-details/{id}`
 
-* **Path Variables:**
-**Required:**
-'id=[long]' 
+* **Path Variables:**<br/>
+**Required:**<br/>
+`id=[long]` 
 
 **Description:** Provides a single MySQL database connection details  in json format for the received id.
 
-* **Success Response:**
-**Code:** 200 OK
-**Content:** {"id":1,"name":"name1","hostname":"localhost","port":3306,"databaseName":"information_schema","username":"root"}
+* **Success Response:**<br/>
+**Code:** 200 OK<br/>
+**Content:** {"id":1,"name":"name1","hostname":"localhost","port":3306,"databaseName":"information_schema","username":"root"}<br/>
 password is currently not sent.
 
-* **Error Response:**
+* **Error Response:**<br/>
 **Code:** 404 Not Found <br/>
 **Content:** 404 NOT_FOUND: Connection details for Id 12 not found.
 
----
+-
 
 
 * REQUEST Method and URL:
