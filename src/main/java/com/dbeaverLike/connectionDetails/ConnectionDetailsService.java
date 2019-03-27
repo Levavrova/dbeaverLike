@@ -3,6 +3,7 @@ package com.dbeaverLike.connectionDetails;
 import com.dbeaverLike.dbBrowser.config.ReqSpecDataAccessPool;
 import com.dbeaverLike.exception.ConnectionDetailsNotFoundException;
 import java.util.List;
+import javax.inject.Inject;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -18,6 +19,7 @@ public class ConnectionDetailsService {
         this.connDetailsRepository = connDetailsRepository;
     }
     
+    @Inject
     public void setReqSpecDataAccessPool(ReqSpecDataAccessPool dataAccessPool){
       this.dataAccessPool = dataAccessPool;  
     } 
