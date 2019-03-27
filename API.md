@@ -3,7 +3,6 @@
 ##  CONNECTION DETAILS
 
 
-
 #### * REQUEST Method and URL:<br/>
 `GET /connection-details/{id}`
 
@@ -97,11 +96,10 @@ JSON body with content-Type application/json<br/>
 **Content:** 404 NOT_FOUND: No class com.dbeaverLike.connectionDetails.ConnectionDetails entity with id 12 exists!
 
 ##
-
+<br/><br/>
 
 
 ##  DATABASE STRUCTURE
-
 
 
 #### * REQUEST Method and URL:<br/>
@@ -116,7 +114,7 @@ JSON body with content-Type application/json<br/>
 * **Success Response:**<br/>
 **Code:** 200 OK<br/>
 **Content:** [{"schemaName":"information_schema","catalogName":"def","defaultCharacterSetName":"utf8","defaultCollationName":"utf8_general_ci","sqlPath":null,"schemaPrivileges":[]},<br/>
-{"schemaName":"sys","catalogName":"def","defaultCharacterSetName":"utf8","defaultCollationName":"utf8_general_ci","sqlPath":null,<br/>"schemaPrivileges":<br/>
+{"schemaName":"sys","catalogName":"def","defaultCharacterSetName":"utf8","defaultCollationName":"utf8_general_ci","sqlPath":null,"schemaPrivileges":<br/>
 [{"grantee":"'mysql.sys'@'localhost'","privilegeType":"TRIGGER","isGrantable":"NO"}]}]
 
 * **Error Response:**<br/>
@@ -140,7 +138,7 @@ JSON body with content-Type application/json<br/>
 **Content:** [{"tableCatalog":"def","tableSchema":"library","tableName":"books",<br/>
 "tableType":"BASE TABLE","engine":"InnoDB","version":10,"rowFormat":"Dynamic","tableRows":18,"avgRowLength":910,"dataLength":16384,"maxDataLength":0,"indexLength":0,"dataFree":0,"autoIncrement":null,"createTime":"2017-03-16T13:31:28","updateTime":null,"checkTime":null,"tableCollation":"utf8_general_ci","checksum":null,"createOptions":"","tableComment":"","referentialConstraints":[]},<br/>
 {"tableCatalog":"def","tableSchema":"library","tableName":"books_authors",<br/>
-"tableType":"BASE TABLE","engine":"InnoDB","version":10,"rowFormat":"Dynamic","tableRows":23,"avgRowLength":712,"dataLength":16384,"maxDataLength":0,"indexLength":32768,"dataFree":0,"autoIncrement":24,"createTime":"2017-03-16T13:35:19","updateTime":null,"checkTime":null,"tableCollation":"utf8_general_ci","checksum":null,"createOptions":"","tableComment":"",<br/>
+"tableType":"BASE TABLE","engine":"InnoDB","version":10,"rowFormat":"Dynamic","tableRows":23,"avgRowLength":712,"dataLength":16384,"maxDataLength":0,"indexLength":32768,"dataFree":0,"autoIncrement":24,"createTime":"2017-03-16T13:35:19","updateTime":null,"checkTime":null,"tableCollation":"utf8_general_ci","checksum":null,"createOptions":"","tableComment":"",
 "referentialConstraints":<br/>
 [{"constraintName":"FK_bk_au_au","uniqueConstraintName":"PRIMARY","matchOption":"NONE","updateRule":"RESTRICT","deleteRule":"RESTRICT","referencedTableName":"author"},<br/>
 {"constraintName":"FK_bk_au_books","uniqueConstraintName":"PRIMARY","matchOption":"NONE","updateRule":"RESTRICT","deleteRule":"RESTRICT","referencedTableName":"books"}]}]
@@ -187,11 +185,11 @@ JSON body with content-Type application/json<br/>
 * **Success Response:**<br/>
 **Code:** 200 OK<br/>
 **Content:** [{"tableCatalog":"def","tableSchema":"royalfamilies","tableName":"person","columnName":"ID",<br/>
-"columnType":"int(4) unsigned","columnKey":"PRI","ordinalPosition":1,"columnDefault":null,"isNullable":"NO","dataType":"int","characterMaximumLength":null,"characterOctetLength":null,"numericPrecision":10,"numericScale":0,"datetimePrecision":null,"characterSetName":null,"collationName":null,"extra":"auto_increment","privileges":"select,insert,update,references","columnComment":"","generationExpression":"",<br/>
+"columnType":"int(4) unsigned","columnKey":"PRI","ordinalPosition":1,"columnDefault":null,"isNullable":"NO","dataType":"int","characterMaximumLength":null,"characterOctetLength":null,"numericPrecision":10,"numericScale":0,"datetimePrecision":null,"characterSetName":null,"collationName":null,"extra":"auto_increment","privileges":"select,insert,update,references","columnComment":"","generationExpression":"",
 "dbIndexes":<br/>
 [{"indexName":"PRIMARY","seqInIndex":1,"nonUnique":0,"collation":"A","cardinality":60,"subPart":null,"packed":null,"nullable":"","indexType":"BTREE","indexComment":"","comment":""}]},<br/>
 {"tableCatalog":"def","tableSchema":"royalfamilies","tableName":"person","columnName":"Name",<br/>
-"columnType":"char(45)","columnKey":"MUL","ordinalPosition":2,"columnDefault":null,"isNullable":"NO","dataType":"char","characterMaximumLength":45,"characterOctetLength":135,"numericPrecision":null,"numericScale":null,"datetimePrecision":null,"characterSetName":"utf8","collationName":"utf8_general_ci","extra":"","privileges":"select,insert,update,references","columnComment":"","generationExpression":"",<br/>
+"columnType":"char(45)","columnKey":"MUL","ordinalPosition":2,"columnDefault":null,"isNullable":"NO","dataType":"char","characterMaximumLength":45,"characterOctetLength":135,"numericPrecision":null,"numericScale":null,"datetimePrecision":null,"characterSetName":"utf8","collationName":"utf8_general_ci","extra":"","privileges":"select,insert,update,references","columnComment":"","generationExpression":"",
 "dbIndexes":<br/>
 [{"indexName":"Name_idx","seqInIndex":1,"nonUnique":1,"collation":"A","cardinality":55,"subPart":null,"packed":null,"nullable":"","indexType":"BTREE","indexComment":"","comment":""}]}]
 
@@ -224,11 +222,10 @@ JSON body with content-Type application/json<br/>
 **Content:** 409 CONFLICT: Wrong connection details configuration. The operation is supported for database information_schema only.
 
 ##
-
+<br/><br/>
 
 
 ##  TABLE DATA
-
 
 
 #### * REQUEST Method and URL:<br/>
@@ -254,11 +251,10 @@ JSON body with content-Type application/json<br/>
 **Content:** 409 CONFLICT: Unknown database 'librarys'
 
 ##
-
+<br/><br/>
 
 
 ##  STATISTICS
-
 
 
 #### * REQUEST Method and URL:<br/>
@@ -306,7 +302,7 @@ JSON body with content-Type application/json<br/>
 **Content:** 409 CONFLICT: Unknown database 'librarys'
 
 ##
-
+<br/><br/>
 
 * **Error Response for all requests except Connection Details requests :**<br/>
 **Code:** 503 Service Unavailable<br/>
