@@ -96,7 +96,7 @@ JSON body with content-Type application/json<br/>
 **Content:** 404 NOT_FOUND: No class com.dbeaverLike.connectionDetails.ConnectionDetails entity with id 12 exists!
 
 ##
-<br/><br/>
+<br/>
 
 
 ##  DATABASE STRUCTURE
@@ -222,7 +222,7 @@ JSON body with content-Type application/json<br/>
 **Content:** 409 CONFLICT: Wrong connection details configuration. The operation is supported for database information_schema only.
 
 ##
-<br/><br/>
+<br/>
 
 
 ##  TABLE DATA
@@ -251,7 +251,7 @@ JSON body with content-Type application/json<br/>
 **Content:** 409 CONFLICT: Unknown database 'librarys'
 
 ##
-<br/><br/>
+<br/>
 
 
 ##  STATISTICS
@@ -302,7 +302,7 @@ JSON body with content-Type application/json<br/>
 **Content:** 409 CONFLICT: Unknown database 'librarys'
 
 ##
-<br/><br/>
+<br/>
 
 * **Error Response for all requests except Connection Details requests :**<br/>
 **Code:** 503 Service Unavailable<br/>
